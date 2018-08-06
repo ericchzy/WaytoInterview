@@ -1,9 +1,9 @@
 package com.company.DesignPattern;
 
 public class MediaAdapter implements MediaPlayer {
-    AdvancedMediaPlayer advancedMusicPlayer;
+    private AdvancedMediaPlayer advancedMusicPlayer;
 
-    public MediaAdapter(String audioType) {
+    MediaAdapter(String audioType) {
         if (audioType.equalsIgnoreCase("vlc")) {
             advancedMusicPlayer = new VlcPlayer();
         } else if (audioType.equalsIgnoreCase("mp4")) {
