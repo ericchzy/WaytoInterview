@@ -2,35 +2,28 @@ package com.company;
 
 public class Interview11 {
     public static ListNode findKthToTail(ListNode head,int k) {
-        ListNode pNext = null;
-        ListNode node = head;
-
-        //Compute the length of List and then findKthToTail.
-        if(head == null) {
+        if (k < 1 || head == null) {
             return null;
         }
-        if(k < 0) {
-            while(k-- !=0) {
-                node = node.next;
+
+        ListNode pointer = head;
+
+        //pointer is (k-1) prior to the head node
+        while (--k != 0) {
+            if (pointer.next != null) {
+//                Notice whether the List is loop
+//                pointer = head;
+                pointer = pointer.next;
+            } else {
+                return null;
             }
         }
-
-        int length = 0;
-        while(node != null) {
-            length++;
-            node = node.next;
-        }
-        if(k > length) {
-            return null;
+        while (pointer.next != null) {
+            pointer = pointer.next;
+            head = head.next;
         }
 
-        int index = length - k;
-        node = head;
-        while(index-- != 0) {
-            node = node.next;
-        }
-
-        return node;
+        return head;
     }
 
     public static void main(String[] args) {
