@@ -5,6 +5,7 @@ public class Interview11 {
         ListNode pNext = null;
         ListNode node = head;
 
+        //Compute the length of List and then findKthToTail.
         if(head == null) {
             return null;
         }
