@@ -1,24 +1,20 @@
-package com.company;
+package com.company.JvmExplore;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * -XX:PermSize=10M -XX:MaxPermSize=
- * Output:
- * Java HotSpot(TM) 64-Bit Server VM warning: Ignoring option PermSize; support was removed in 8.0
- * Java HotSpot(TM) 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
- */
+public class HeapOOM {
 
-/**
- * -Xms20m -Xmx20m
- */
+    public static class OOMObject {
 
-public class RuntimeConstantPoolOOM {
+    }
+
     public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
+	// write your code here
+        List<OOMObject> objects = new ArrayList<>();
         while (true) {
-            list.add(" ".intern());
+            objects.add(new OOMObject());
+            System.out.println(System.currentTimeMillis());
         }
     }
 }
@@ -31,8 +27,5 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 	at java.base/java.util.ArrayList.grow(ArrayList.java:242)
 	at java.base/java.util.ArrayList.add(ArrayList.java:467)
 	at java.base/java.util.ArrayList.add(ArrayList.java:480)
-	at com.company.RuntimeConstantPoolOOM.main(RuntimeConstantPoolOOM.java:16)
+	at com.company.JvmExplore.HeapOOM.main(HeapOOM.java:16)
 *///:~
-
-
-

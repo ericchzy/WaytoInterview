@@ -1,4 +1,4 @@
-package com.company;
+package com.company.JvmExplore;
 
 public class StackOverflowError {
 
@@ -23,8 +23,8 @@ public class StackOverflowError {
 /* Output:
 Exception in thread "main" java.lang.StackOverflowError
 stackLength is: 33430
-	at com.company.StackOverflowError.methodStackLeak(StackOverflowError.java:9)
-    at com.company.StackOverflowError.methodStackLeak(StackOverflowError.java:9)
+	at com.company.JvmExplore.StackOverflowError.methodStackLeak(StackOverflowError.java:9)
+    at com.company.JvmExplore.StackOverflowError.methodStackLeak(StackOverflowError.java:9)
     ...
 *///:~
 

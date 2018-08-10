@@ -1,4 +1,4 @@
-package com.company;
+package com.company.JvmExplore;
 
 public class ThreadStackOverflow {
 
@@ -30,6 +30,6 @@ public class ThreadStackOverflow {
 Exception in thread "main" java.lang.OutOfMemoryError: unable to create native thread: possibly out of memory or process/resource limits reached
 	at java.base/java.lang.Thread.start0(Native Method)
 	at java.base/java.lang.Thread.start(Thread.java:813)
-	at com.company.ThreadStackOverflow.createThread(ThreadStackOverflow.java:19)
-	at com.company.ThreadStackOverflow.main(ThreadStackOverflow.java:25)
+	at com.company.JvmExplore.ThreadStackOverflow.createThread(ThreadStackOverflow.java:19)
+	at com.company.JvmExplore.ThreadStackOverflow.main(ThreadStackOverflow.java:25)
 *///:~
