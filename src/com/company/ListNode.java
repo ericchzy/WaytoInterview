@@ -5,7 +5,6 @@ public class ListNode {
     ListNode next = null;
 
     ListNode() {
-
     }
 
     ListNode(int value) {

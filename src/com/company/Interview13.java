@@ -3,29 +3,50 @@ package com.company;
 public class Interview13 {
     public static ListNode deleteDuplication(ListNode pHead)
     {
+        /* Loop Version */
+        if (pHead == null) {
+            return null;
+        }
+
+//        // 只有一个结点
+//        if (pHead.next == null) {
+//            return pHead;
+//        }
+
+        // 临时的头结点
+        ListNode root = new ListNode();
+        root.next = pHead;
+        // 记录前驱结点
+        ListNode prev = root;
+        // 记录当前处理的结点
+        ListNode node = pHead;
+        while (node != null && node.next != null) {
+            // 有重复结点，与node值相同的结点都要删除
+            if (node.value == node.next.value) {
+                // 找到下一个不同值的节点，注意其有可能也是重复节点
+                while (node.next != null && node.next.value == node.value) {
+                    node = node.next;
+                }
+                // 指向下一个节点，prev.next也可能是重复结点
+                // 所以prev不要移动到下一个结点
+                prev.next = node.next;
+            }
+            // 相邻两个值不同，说明node不可删除，要保留
+            else {
+                prev.next = node;
+                prev = prev.next;
+
+            }
+            node = node.next;
+        }
+
+        return root.next;
+
+/*        *//* Recursive Version *//*
         if (pHead == null || pHead.next == null) {
             return pHead;
         }
 
-        /* Loop Version */
-        ListNode root = new ListNode(-1);
-        root.next = pHead;
-        ListNode current = pHead;
-        ListNode last = root;
-        while (current != null && current.next != null) {
-            if (current.value == current.next.value) {
-                while (current.next != null && current.next.value == current.value) {
-                    current = current.next;
-                }
-                last.next = current;
-            } else {
-                last = current;
-                current = current.next;
-            }
-        }
-        return root.next;
-
-/*        *//* Recursive Version *//*
         if (pHead != null && pHead.value == pHead.next.value) {
             ListNode pNode = pHead.next;
             while (pNode != null && pNode.value == pHead.value) {
@@ -234,13 +255,13 @@ public class Interview13 {
 
 
 /* Output:
-1->2->3->4->5->null
+1->2->5->null
 1->2->3->4->5->6->7->null
-1->2->null
-1->null
-1->2->3->4->null
-1->2->3->4->5->null
-1->2->3->4->5->null
+2->null
+null
+null
+2->4->null
+4->null
 1->2->null
 1->null
 null
