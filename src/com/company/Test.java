@@ -5,9 +5,13 @@ package com.company;
 
 public class Test {
     public static void main(String[] args)  {
-        String str=null;
-        str.concat("abc");
-        str.concat("123");
-        System.out.println(str);
+//        String str=null;
+//        str.concat("abc");
+//        str.concat("123");
+//        System.out.println(str);
+
+        String string = "";
+        char[] charArray = string.toCharArray();
+        System.out.println(charArray);
     }
 }
