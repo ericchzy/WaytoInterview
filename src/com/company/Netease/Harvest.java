@@ -49,6 +49,7 @@ public class Harvest {
                 return mid;
             }
         }
+//        没有找到就返回数值坐落区间的下界
         return start;
     }
 }
