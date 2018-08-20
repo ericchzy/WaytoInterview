@@ -6,7 +6,7 @@
         <provider providerId="com.vladsch.idea.multimarkdown.editor.javafx.html.panel" providerName="JavaFX WebView" />
       </PanelProvider>
     </PreviewSettings>
-    <ParserSettings gitHubSyntaxChange="false" emojiShortcuts="1" emojiImages="0">
+    <ParserSettings gitHubSyntaxChange="false" emojiShortcuts="0" emojiImages="0">
       <PegdownExtensions>
         <option name="ABBREVIATIONS" value="false" />
         <option name="ANCHORLINKS" value="true" />
@@ -31,7 +31,7 @@
         <option name="TABLES" value="true" />
         <option name="TASKLISTITEMS" value="true" />
         <option name="TOC" value="false" />
-        <option name="WIKILINKS" value="true" />
+        <option name="WIKILINKS" value="false" />
       </PegdownExtensions>
       <ParserOptions>
         <option name="ADMONITION_EXT" value="false" />
@@ -45,7 +45,7 @@
         <option name="GFM_TABLE_RENDERING" value="true" />
         <option name="GITBOOK_URL_ENCODING" value="false" />
         <option name="GITHUB_LISTS" value="false" />
-        <option name="GITHUB_WIKI_LINKS" value="true" />
+        <option name="GITHUB_WIKI_LINKS" value="false" />
         <option name="HEADER_ID_NO_DUPED_DASHES" value="false" />
         <option name="JEKYLL_FRONT_MATTER" value="false" />
         <option name="NO_TEXT_ATTRIBUTES" value="false" />
