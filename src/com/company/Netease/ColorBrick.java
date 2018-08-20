@@ -8,7 +8,7 @@ public class ColorBrick {
         Scanner scanner = new Scanner(System.in);
         String string = scanner.nextLine();
 
-        HashSet<String> colorSet = new HashSet<String>();
+        HashSet<String> colorSet = new HashSet<>();
         for (int i = 0; i < string.length(); i++) {
             colorSet.add(string.substring(i, i + 1));
 
@@ -18,6 +18,5 @@ public class ColorBrick {
             }
         }
         System.out.println(colorSet.size());
-
     }
 }
