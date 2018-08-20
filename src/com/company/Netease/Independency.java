@@ -30,7 +30,6 @@ public class Independency {
             /* Deal with the shortage of the Apple */
             System.out.println(AppleNum + (Balance - AppleNum * rentPrice) / (ApplePrice + rentPrice));
         }
-
         scanner.close();
 
     }
