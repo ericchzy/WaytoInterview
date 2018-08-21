@@ -10,6 +10,7 @@ import java.util.Scanner;
  * 说明
  * 满足条件的数对有(2,3),(2,4),(2,5),(3,4),(3,5),(4,5),(5,3)
  */
+
 public class PairedNum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
