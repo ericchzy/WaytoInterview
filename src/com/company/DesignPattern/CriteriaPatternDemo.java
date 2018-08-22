@@ -3,9 +3,13 @@ package com.company.DesignPattern;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 抽象标准的模式就是太啰嗦了，每新增一个筛选标准都要新增一个类，为此我们可以使用匿名类
+ */
+
 public class CriteriaPatternDemo {
     public static void main(String[] args) {
-        List<Person> persons = new ArrayList<Person>();
+        List<Person> persons = new ArrayList<>();
 
         persons.add(new Person("Robert","Male", "Single"));
         persons.add(new Person("John","Male", "Married"));
@@ -28,6 +32,21 @@ public class CriteriaPatternDemo {
         System.out.println("\nSingle Males: ");
         printPersons(singleMale.meetCriteria(persons));
 
+        System.out.println("\nSingle Females: ");
+        printPersons(new Criteria() {
+            List<Person> result = new ArrayList<>();
+            @Override
+            public List<Person> meetCriteria(List<Person> persons) {
+                for (Person person : persons) {
+                    if (person.getGender().equalsIgnoreCase("Female") && person.getMaritalStatus().equalsIgnoreCase("Single")) {
+                        result.add(person);
+                    }
+                }
+                return result;
+            }
+        }.meetCriteria(persons));
+
+//        printPersons(filterPersonByCriteria(persons, (List<Person> personList) -> ));
     }
 
     public static void printPersons(List<Person> persons){
@@ -38,4 +57,13 @@ public class CriteriaPatternDemo {
                     +" ]");
         }
     }
+
+/*    public static List<Person> filterPersonByCriteria(List<Person> persons, Criteria criteria) {
+        List<Person> result = new ArrayList<>();
+        for (Person person : persons) {
+            if (criteria.meetCriteria(person));
+            result.add(person);
+        }
+        return result;
+    }*/
 }

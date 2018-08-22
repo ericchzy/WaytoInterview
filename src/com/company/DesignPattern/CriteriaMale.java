@@ -14,4 +14,5 @@ public class CriteriaMale implements Criteria {
         }
         return malePersons;
     }
+
 }
