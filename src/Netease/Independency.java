@@ -1,4 +1,4 @@
-package com.company.Netease;
+package Netease;
 
 /**
  * Version 1

@@ -1,4 +1,4 @@
-package com.company.Netease;
+package Netease;
 
 import java.util.HashSet;
 import java.util.Scanner;
