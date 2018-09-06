@@ -21,7 +21,7 @@ public class FindJob {
 
     }
 
-    public static void process2(int[][] jdArray, int[] ability) {
+    private static void process2(int[][] jdArray, int[] ability) {
         // 按照工作难度升序排序
         Arrays.sort(jdArray, (int[] jd1, int[] jd2) -> {return jd1[0] - jd2[0];});
 

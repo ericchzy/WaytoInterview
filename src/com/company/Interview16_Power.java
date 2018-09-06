@@ -1,6 +1,6 @@
 package com.company;
 
-public class Interview16 {
+public class Interview16_Power {
     static boolean gInvalidInput = false;
 
     public static double Power(double base, int exponent) {

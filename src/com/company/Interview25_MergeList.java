@@ -1,6 +1,6 @@
 package com.company;
 
-public class Interview25 {
+public class Interview25_MergeList {
     public static ListNode Merge(ListNode list1,ListNode list2) {
         if (list1 == null) {
             return list2;

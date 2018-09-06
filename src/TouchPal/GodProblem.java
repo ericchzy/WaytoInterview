@@ -1,7 +1,6 @@
 package TouchPal;
 
 import java.util.Scanner;
-import java.util.Stack;
 
 public class GodProblem {
 /*    public static void main(String[] args) {

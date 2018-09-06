@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Stack;
 
-public class Interview27 {
+public class Interview27_MirrorTree {
     public static void mirrorRecursively(TreeNode root) {
         if (root == null) {
             return;

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Interview38 {
+public class Interview38_Permutation {
 /*
     public static void permutation(char[] str, int low, int high) {
         if (high < 0) {  //单个字符无法输出

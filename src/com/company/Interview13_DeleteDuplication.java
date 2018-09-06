@@ -1,6 +1,6 @@
 package com.company;
 
-public class Interview13 {
+public class Interview13_DeleteDuplication {
     public static ListNode deleteDuplication(ListNode pHead)
     {
         /* Loop Version */
