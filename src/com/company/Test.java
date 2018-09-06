@@ -18,6 +18,11 @@ public class Test {
         String b = "ab" + "c";
         String c = "ab";
         String d = c + "c";
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println("----");
         System.out.println("Test1: " + a==b); // 没有打印前面的字符串
         System.out.println(a==b);
         System.out.println("Test3: " + a.equals(b));
@@ -32,6 +37,7 @@ public class Test {
          * false
          */
 
+        System.out.println("-----");
         int i = '1' + '2' + '3';
         System.out.println(i);
 
@@ -40,8 +46,11 @@ public class Test {
          * character 1,2,3 are 49,50,51 which return 150 when doing the addition.
          */
 
-
+        System.out.println("-----");
+        System.out.println("is" + 100 + 5);
+        System.out.println("is" + (100 + 5));
+        System.out.println(100 + 5 + "is");
+        System.out.println(100 + "is" + 5); //这个应该也是自动包装了
     }
-
 
 }
