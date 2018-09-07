@@ -61,10 +61,10 @@ public class GodProblem {
         int height=in.nextInt();
         int width=in.nextInt();
         int waterLevel=in.nextInt();
-        int [][]map=new int[height][width];
-        for(int i=0;i<height;i++){
-            for(int j=0;j<width;j++){
-                map[i][j]=in.nextInt();
+        int[][] map = new int[height][width];
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                map[i][j] = in.nextInt();
             }
         }
         boolean [][]isVisited=new boolean[height][width];
