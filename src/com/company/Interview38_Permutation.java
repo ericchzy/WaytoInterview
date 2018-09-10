@@ -27,7 +27,7 @@ public class Interview38_Permutation {
         str[right] = tmp;
     }
 
-    public static void main(String[] args) {
+    public static void main(SimilarString[] args) {
         char[] charArray1 = {'a', 'b', 'c'};
         char[] charArray2 = {};
         char[] charArray3 = {'a'};

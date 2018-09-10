@@ -309,3 +309,11 @@ Possible
 ```
 3
 ```
+
+## 橡皮泥斑马(EraserZebra)
+
+![](https://uploadfiles.nowcoder.com/images/20180908/732536010_1536397849154_922E6A63DDA0621BB50CB5B601994C1D)
+
+## 翻转
+
+

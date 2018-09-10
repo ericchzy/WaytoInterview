@@ -1,6 +1,6 @@
 # 2018 秋招刷题汇总
 
-# JVM_Explore
+## JVM Explore
 
 简单的Java虚拟机探索之旅以及OOM问题探究
 
@@ -12,7 +12,7 @@
 - 运行时常量池内存溢出（在 JDK8
   中，永久代已完全被元空间(Meatspace)所取代，故此处抛出错误和堆内存溢出一样）
 
-# Design Pattern
+## Design Pattern
 各种经典的设计模式以及简单例子
 
 - 工厂模式
@@ -22,12 +22,12 @@
 - MVC模式
 - 策略模式
 
-# Algorithm
+## Algorithm
 
 剑指Offer上的算法题目的Java实现
 
 
-# Netease
+## Netease
 
 2018 - 2019 年度网易Android、Java岗算法题目汇总
 
@@ -42,3 +42,14 @@
 - 等差数列(ArithmeticProgression)
 - 小易喜欢的数列(FavouriteSequence)
 
+## 触宝
+2019秋季校招Android工程师
+
+- 优先级计算表达式(Expression)
+- 上帝洪水(GodProblem)
+
+## B站策略/算法岗
+
+- 最短路径逃脱问题(MouseEscape)
+- 版本号比较问题(VersionCompare)
+- 附带提前结束条件的顺时针打印数字矩阵(ClockwiselyPrintMatrix)

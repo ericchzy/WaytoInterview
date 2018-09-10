@@ -3,7 +3,7 @@ package TouchPal;
 import java.util.Scanner;
 
 public class GodProblem {
-/*    public static void main(String[] args) {
+/*    public static void main(SimilarString[] args) {
         Scanner sc = new Scanner(System.in);
         int height = sc.nextInt();  // heigth for axis=0
         int width = sc.nextInt();  // width for axis=1

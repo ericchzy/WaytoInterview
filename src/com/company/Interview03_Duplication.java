@@ -15,7 +15,7 @@ package com.company;
 public class Interview03_Duplication {
     public static boolean duplicate(int numbers[],int length,int [] duplication) {
         //利用“在一个长度为n的数组里的所有数字都在0到n-1的范围内”这一条件
-
+        //利用数组中出现的数字作为映射的位置，如果遍历数组过程中出现相同的映射位置则说明存在重复的数字
         if (numbers == null || length <= 0) {
             return false;
         }

@@ -13,12 +13,8 @@ public class Interview07 {
         queue.add(root);
         while (queue.size() != 0) {
             TreeNode temp = queue.remove(0);
-            if (temp.left != null){
-                queue.add(temp.left);
-            }
-            if (temp.right != null) {
-                queue.add(temp.right);
-            }
+            if (temp.left != null) queue.add(temp.left);
+            if (temp.right != null) queue.add(temp.right);
             list.add(temp.val);
         }
         return list;

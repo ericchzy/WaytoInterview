@@ -18,7 +18,7 @@ public class MixedZerosAndOnes {
                         maxLen = len;
                     }
                 } else {
-                    /* reset parameter len when the MixedZerosAndOnes String is interrupted */
+                    /* reset parameter len when the MixedZerosAndOnes SimilarString is interrupted */
                     len = 1;
                 }
             }
