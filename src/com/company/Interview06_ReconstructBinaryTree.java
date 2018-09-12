@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.util.TreeNode;
+
 public class Interview06_ReconstructBinaryTree {
 
 /*    static int preIndex = 0; // wrong
@@ -34,7 +36,7 @@ public class Interview06_ReconstructBinaryTree {
         return i;
     }*/
 
-    public static TreeNode reConstructBinaryTree(int [] pre,int [] in) {
+    public static TreeNode reConstructBinaryTree(int [] pre, int [] in) {
         if (pre == null || in == null) {
             return null;
         }

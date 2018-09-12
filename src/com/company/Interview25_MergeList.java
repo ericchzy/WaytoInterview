@@ -1,7 +1,10 @@
 package com.company;
 
+import com.company.util.ListNode;
+import com.company.util.io;
+
 public class Interview25_MergeList {
-    public static ListNode Merge(ListNode list1,ListNode list2) {
+    public static ListNode Merge(ListNode list1, ListNode list2) {
         if (list1 == null) {
             return list2;
         }

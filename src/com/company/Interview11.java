@@ -1,7 +1,9 @@
 package com.company;
 
+import com.company.util.ListNode;
+
 public class Interview11 {
-    public static ListNode findKthToTail(ListNode head,int k) {
+    public static ListNode findKthToTail(ListNode head, int k) {
         if (k < 1 || head == null) {
             return null;
         }

@@ -51,6 +51,34 @@ public class Test {
         System.out.println("is" + (100 + 5));
         System.out.println(100 + 5 + "is");
         System.out.println(100 + "is" + 5); //这个应该也是自动包装了
+
+        /**
+         * 字符串大小问题
+         */
+        System.out.println("-----");
+        System.out.println("'ABCD' compare to 'DCBA': " + "ABCD".compareTo("DCBA"));
+
+        /**
+         * try-catch-finally问题
+         */
+
+        System.out.println("-----");
+        System.out.println(test());
+
+        /**
+         * Object对象方法问题
+         */
+        Object object = new Object();
+
+    }
+
+    public static int test() {
+        try {
+            return 0;
+        }
+        finally {
+            System.out.println("finally trumps return.");
+        }
     }
 
 }

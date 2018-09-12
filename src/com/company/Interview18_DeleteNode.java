@@ -1,8 +1,8 @@
 package com.company;
 
-import java.util.List;
+import com.company.util.ListNode;
 
-import static com.company.io.printList;
+import static com.company.util.io.printList;
 
 public class Interview18_DeleteNode {
 

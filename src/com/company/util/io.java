@@ -1,4 +1,4 @@
-package com.company;
+package com.company.util;
 
 public class io {
     /* This funtcion is here just to test buildTree() */
