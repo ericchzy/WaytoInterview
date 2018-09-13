@@ -2,6 +2,8 @@ package com.company.BIGO;
 
 import com.company.util.ListNode;
 
+import static com.company.util.io.printList;
+
 public class MoveKthToFront {
     private static ListNode moveKthToFront(ListNode head, int k) {
         if (head == null || k < 0) return null;
@@ -54,16 +56,8 @@ public class MoveKthToFront {
         ListNode nullList = null;
         System.out.print("After move " + k3 + "th from back to front, " + "List is : ");
         printList(moveKthToFront(nullList, k3));
-
     }
 
-    public static void printList(ListNode head) {
-        while (head != null) {
-            System.out.print(head.value + "->");
-            head = head.next;
-        }
-        System.out.println("null");
-    }
 }
 
 /* Output:

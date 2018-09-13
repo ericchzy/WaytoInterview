@@ -21,8 +21,6 @@ xyx
 4
 ```
 
-
-
 ## 完全多部图
 
-![](![](https://ws1.sinaimg.cn/mw690/0061W3qMly1fv73nfgqmej30rj0madgl.jpg))
+![](https://ws1.sinaimg.cn/mw690/0061W3qMly1fv73nfgqmej30rj0madgl.jpg)

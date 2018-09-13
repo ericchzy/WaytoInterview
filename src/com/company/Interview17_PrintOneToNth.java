@@ -30,7 +30,7 @@ public class Interview17_PrintOneToNth {
             // 可以输入数组的值
             printArray(arr);
         } else {
-            // 对
+            // 例如两位数n为1的时候就要遍历到n为2（即是遍历到个位数）的时候才可以打印
             for (int i = 0; i <= 9; i++) {
                 arr[n] = i;
                 printOneToNthDigits(n + 1, arr);
@@ -120,11 +120,11 @@ public class Interview17_PrintOneToNth {
 
     public static void main(String[] args) {
         System.out.println();
-        printOneToNthDigits(3);
+        printOneToNthDigits2(3);
         System.out.println();
-        printOneToNthDigits(-1);
+        printOneToNthDigits2(-1);
         System.out.println();
-        printOneToNthDigits(0);
+        printOneToNthDigits2(0);
 //        printOneToNthDigits2(3);
     }
 
