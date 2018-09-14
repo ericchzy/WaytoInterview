@@ -22,8 +22,8 @@ public class Interview20_NumericPattern {
 
                 index = scanDigits(str, index);
 
-                if (index > str.length()) {
-                    numeric = true;
+                if (index >= str.length()) {
+                    numeric = true;             // 小数的情况
                 } else if (index < str.length() && str.charAt(index) == 'e' || str.charAt(index) == 'E') {
                     numeric = isExponential(str, index);
                 } else {
@@ -43,15 +43,20 @@ public class Interview20_NumericPattern {
     }
 
     private static boolean isExponential(String str, int index) {
+
+        if (index >= str.length() || (str.charAt(index) != 'E' && str.charAt(index) != 'e')) {
+            return false;
+        }
+
         index++;
 
-        if (index > str.length()) return false;
+        if (index >= str.length()) return false;
 
         if (str.charAt(index) == '+' || str.charAt(index) == '-') {
             index++;
         }
 
-        if (index > str.length()) return false;
+        if (index >= str.length()) return false;
 
         index = scanDigits(str, index);
 
@@ -61,7 +66,7 @@ public class Interview20_NumericPattern {
     }
 
     private static int scanDigits(String str, int index) {
-        if (index < str.length() && str.charAt(index) >= '0' && str.charAt(index) <= '9') {
+        while (index < str.length() && str.charAt(index) >= '0' && str.charAt(index) <= '9') {
             index++;
         }
 

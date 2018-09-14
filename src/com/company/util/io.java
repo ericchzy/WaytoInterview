@@ -40,4 +40,11 @@ public class io {
         }
         System.out.println("null");
     }
+
+    public static void printIntegerArray(int[] numArray) {
+        for (int element : numArray) {
+            System.out.print(element + " ");
+        }
+        System.out.println();
+    }
 }
