@@ -64,6 +64,11 @@ public class Test {
 
         System.out.println("-----");
         System.out.println(test());
+        System.out.println();
+        System.out.println(getVal("10"));
+        System.out.println(getVal(null));
+        System.out.println(getVal("x"));
+        System.out.println(getVal("-2"));
 
         /**
          * Object对象方法问题
@@ -78,6 +83,19 @@ public class Test {
         }
         finally {
             System.out.println("finally trumps return.");
+        }
+    }
+
+    public static int getVal(String str) {
+        int val = 0;
+        try {
+            val = Integer.parseInt(str);
+            return val;
+        } catch (NumberFormatException e) {
+            return val;
+        }
+        finally {
+            val = -1;
         }
     }
 
