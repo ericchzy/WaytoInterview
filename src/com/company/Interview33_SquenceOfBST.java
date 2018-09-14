@@ -1,7 +1,7 @@
 package com.company;
 
 //WRONG: method spliceArray: ArrayIndexOutOfBoundsException -1
-public class Interview08 {
+public class Interview33_SquenceOfBST {
     public static boolean VerifySquenceOfBST(int [] sequence) {
         boolean result;
         if(sequence == null || sequence.length <= 0) {

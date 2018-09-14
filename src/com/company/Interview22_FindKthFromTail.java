@@ -2,7 +2,7 @@ package com.company;
 
 import com.company.util.ListNode;
 
-public class Interview11 {
+public class Interview22_FindKthFromTail {
     public static ListNode findKthToTail(ListNode head, int k) {
         if (k < 1 || head == null) {
             return null;

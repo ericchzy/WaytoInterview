@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Stack;
 
-public class Interview09 {
+public class Interview09_QueueWithTwoStacks {
     private static Stack<Integer> stack1 = new Stack<Integer>();
     private static Stack<Integer> stack2 = new Stack<Integer>();
 

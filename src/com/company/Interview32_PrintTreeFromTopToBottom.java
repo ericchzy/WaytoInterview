@@ -4,24 +4,21 @@ import com.company.util.TreeNode;
 
 import java.util.ArrayList;
 
-public class Interview32_PrintFromTopToBottom {
-    private static void printFromTopToBottom(TreeNode t) {
+public class Interview32_PrintTreeFromTopToBottom {
+    private static void printFromTopToBottom(TreeNode root) {
         ArrayList<Integer> list = new ArrayList<>();
         ArrayList<TreeNode> queue = new ArrayList<>();
 
-        if(t == null) {
+        if(root == null) {
             System.out.println(list.toString());
         } else {
-            queue.add(t);
+            queue.add(root);
             while(queue.size() != 0) {
                 TreeNode tempNode = queue.remove(0);
+
                 //空值不入队列
-                if(tempNode.left != null) {
-                    queue.add(tempNode.left);
-                }
-                if(tempNode.right != null) {
-                    queue.add(tempNode.right);
-                }
+                if(tempNode.left != null) queue.add(tempNode.left);
+                if(tempNode.right != null) queue.add(tempNode.right);
                 list.add(tempNode.val);
             }
             System.out.println(list.toString());

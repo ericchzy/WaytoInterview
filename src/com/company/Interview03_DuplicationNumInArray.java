@@ -12,7 +12,7 @@ package com.company;
  * 总结:boolean单独存在占4字节，在boolean[]中占1字节。
  **/
 
-public class Interview03_Duplication {
+public class Interview03_DuplicationNumInArray {
     public static boolean duplicate(int numbers[],int length,int [] duplication) {
         //利用“在一个长度为n的数组里的所有数字都在0到n-1的范围内”这一条件
         //利用数组中出现的数字作为映射的位置，如果遍历数组过程中出现相同的映射位置则说明存在重复的数字

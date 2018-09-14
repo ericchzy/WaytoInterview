@@ -2,7 +2,7 @@ package com.company;
 
 import com.company.util.TreeNode;
 
-public class Interview06_ReconstructBinaryTree {
+public class Interview07_ReconstructBinaryTree {
 
 /*    static int preIndex = 0; // wrong
 

@@ -1,6 +1,6 @@
 package com.company;
 
-public class Interview12 {
+public class Interview53_NumAppearInOrderArray {
     public static int getNumberOfK(int [] array , int k) {
         int length = array.length;
         if (length == 0) {
