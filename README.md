@@ -1,5 +1,7 @@
 # 2018 秋招刷题汇总
 
+💪 如果你觉得有帮助请点个 star，谢谢！欢迎 Follow 我 ☕️
+
 ## JVM Explore
 
 简单的Java虚拟机探索之旅以及OOM问题探究
@@ -26,6 +28,10 @@
 
 剑指Offer上的算法题目的Java实现
 
+## Leetcode
+
+- IsomorphicStrings_lc205
+- lowestCommonAncestor_lc235
 
 ## Netease
 
@@ -41,6 +47,9 @@
 - 彩色砖块排列（ColorBrick）
 - 等差数列(ArithmeticProgression)
 - 小易喜欢的数列(FavouriteSequence)
+- 橡皮泥斑马(EraserZebra)
+- 翻转
+- 字符串距离之Levenshtein Distance变种问题 (EditDistance)
 
 ## 触宝
 2019秋季校招Android工程师
@@ -53,3 +62,58 @@
 - 最短路径逃脱问题(MouseEscape)
 - 版本号比较问题(VersionCompare)
 - 附带提前结束条件的顺时针打印数字矩阵(ClockwiselyPrintMatrix)
+
+## 百度
+2019机器学习工程师笔试
+
+选择题
+- 二次探测再散列
+- 离散单信号源信息熵
+- 静态重定位
+- 贝叶斯定理
+- Apriori算法
+- 最小生成树 Prim算法
+
+问答题
+- 特征选择算法
+- “标题党”度量的特征选择与标注数据获取
+
+编程题
+- 字符串计数2019年秋招37互娱笔试
+- 寻寻觅觅
+
+## BIGO
+2019机器视觉线下笔试
+
+问答题
+- 导数、偏导数、方向导数、梯度概念
+- Logistic Regression原理
+- 卷积神经网络感受野概念
+
+编程题
+- 将单链表的数K个数移动到链表前面(MoveKthToFront)
+
+## 京东
+
+编程题
+- 相似字符串(SimilarString)
+- 完全多部图(CompleteMultiGraph)
+
+## 37互娱
+2019年秋招37互娱笔试
+
+- 将数字0移动到最后(MoveZeros)
+- 冒泡排序(BubbleSort)
+
+## 欢聚时代YY
+
+2019欢聚时代Android工程师笔试
+
+问答题
+- 观察者模式
+- 横竖屏切换Activity生命过程
+
+编程题
+- 子字符串的最大长度(MaxLengthOfSubstring)
+- 在给定范围内因子和为100的最小乘积
+
