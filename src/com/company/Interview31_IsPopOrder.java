@@ -3,7 +3,7 @@ package com.company;
 import java.util.Stack;
 
 public class Interview31_IsPopOrder {
-    public static boolean isPopOrder(int [] pushA,int [] popA) {
+    private static boolean isPopOrder(int [] pushA,int [] popA) {
         if (pushA.length == 0 || popA.length == 0) {
             return false;
         }

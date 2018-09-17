@@ -3,7 +3,7 @@ package com.company;
 import com.company.util.ListNode;
 import com.company.util.io;
 
-public class Interview13_DeleteDuplication {
+public class Interview18_Variant_DeleteDuplication {
     public static ListNode deleteDuplication(ListNode pHead)
     {
         /* Loop Version */

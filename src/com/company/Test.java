@@ -75,6 +75,16 @@ public class Test {
          */
         Object object = new Object();
 
+        /**
+         * Initialize array
+         */
+        boolean[] visited = new boolean[3 * 4];
+
+        System.out.println("-----");
+        for (boolean bool : visited) {
+            System.out.print(bool + " ");
+        }
+
     }
 
     public static int test() {
@@ -98,5 +108,4 @@ public class Test {
             val = -1;
         }
     }
-
 }
