@@ -1,4 +1,4 @@
-package Netease;
+package SF;
 
 import java.util.Scanner;
 

@@ -117,3 +117,9 @@
 - 子字符串的最大长度(MaxLengthOfSubstring)
 - 在给定范围内因子和为100的最小乘积
 
+## 顺丰
+2019顺丰人工智能与机器学习工程师笔试
+
+编程题
+- 文本改写(EditDistance)
+- 排排坐吃果果(CandyProblem)
