@@ -85,6 +85,10 @@ public class Test {
             System.out.print(bool + " ");
         }
 
+        System.out.println();
+        System.out.println("-----");
+        System.out.println(14^3);
+
     }
 
     public static int test() {

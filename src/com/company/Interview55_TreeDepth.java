@@ -40,6 +40,7 @@ public class Interview55_TreeDepth {
         return false;
     }
 
+    // Slow Version
     private static boolean isBalancedCore2(TreeNode root) {
         if (root == null) return true;
         else return !(Math.abs(treeDepth(root.right) - treeDepth(root.left)) > ALLOWED_IMBALANCE);

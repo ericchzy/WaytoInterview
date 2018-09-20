@@ -1,7 +1,7 @@
 package com.company;
 
 public class Interview19_RegularExpression {
-    static boolean match(String input, String pattern) {
+    private static boolean match(String input, String pattern) {
         if (input == null || pattern == null) {
             return false;
         }
