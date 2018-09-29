@@ -3,6 +3,10 @@ package com.company;
 //import com.company.util.TestUtil;
 //import com.company.TestUtil;
 
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 public class Test {
     public static void main(String[] args)  {
 //        SimilarString str=null;
@@ -89,6 +93,64 @@ public class Test {
         System.out.println("-----");
         System.out.println(14^3);
 
+        /**
+         * HashMap遍历效率技巧：
+         * 1> 通过keySet来遍历效率低下，对于keySet其实是遍历了2次，一次是转为iterator，一次就是从HashMap中取出key所对于的value
+         * 2> 通过entrySet来遍历效率较高
+         */
+
+
+        System.out.println("-----");
+        Map map = new HashMap();
+        map.put("key1","lisi1");
+        map.put("key2","lisi2");
+        map.put("key3","lisi3");
+        map.put("key4","lisi4");
+
+        // 使用keySet遍历
+        Iterator keyIterator = map.keySet().iterator();
+        while (keyIterator.hasNext()) {
+            Object key = keyIterator.next();
+            System.out.println(map.get(key));
+        }
+        //将map集合中的映射关系取出，存入到set集合
+        Iterator it = map.entrySet().iterator();
+        while(it.hasNext()){
+            Map.Entry e =(Map.Entry) it.next();
+            System.out.println("键"+e.getKey () + "的值为" + e.getValue());
+        }
+
+        /**
+         * 自定义类型作为Map的键
+         */
+        System.out.println("-----");
+        HashMap<Person, String> personMap = new HashMap<>();
+
+        personMap.put(new Person("001"), "findingsea");
+        personMap.put(new Person("002"), "linyin");
+        personMap.put(new Person("003"), "henrylin");
+        personMap.put(new Person("003"), "findingsealy");
+
+        System.out.println(personMap.toString());
+
+        System.out.println(personMap.get(new Person("001")));
+        System.out.println(personMap.get(new Person("002")));
+        System.out.println(personMap.get(new Person("003")));
+
+
+        /**
+         * String.hashCode()
+         */
+
+        System.out.println("findingsea".hashCode());
+        System.out.println("findingsea".hashCode());
+        System.out.println(new String("findingsea").hashCode());
+        System.out.println(new String("findingsea").hashCode());
+
+        /**
+         *
+         */
+
     }
 
     public static int test() {
@@ -111,5 +173,30 @@ public class Test {
         finally {
             val = -1;
         }
+    }
+}
+
+class Person {
+    private String id;
+
+    public Person(String id) {
+        this.id = id;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Person person = (Person) o;
+
+        if (id != null ? !id.equals(person.id) : person.id != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return id != null ? id.hashCode() : 0;
     }
 }
