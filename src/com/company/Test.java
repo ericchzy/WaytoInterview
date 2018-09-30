@@ -89,9 +89,25 @@ public class Test {
         System.out.println("-----");
         System.out.println(14^3);
 
+        /**
+         * thread.run()还是当作普通方法的方式调用，程序还是要顺序执行，要等待run方法体执行完毕后，才可继续执行下面的代码
+         * thread.start()才是将线程体放入到线程等待序列之中等待线程调度程序运行
+         */
+        System.out.println("-----");
+        Runner1 runner1 = new Runner1();
+        Runner2 runner2 = new Runner2();
+//		Thread(Runnable target) 分配新的 Thread 对象。
+        Thread thread1 = new Thread(runner1);
+        Thread thread2 = new Thread(runner2);
+//		thread1.start();
+//		thread2.start();
+        thread1.run();
+        thread2.run();
+
+
     }
 
-    public static int test() {
+    private static int test() {
         try {
             return 0;
         }
@@ -100,7 +116,7 @@ public class Test {
         }
     }
 
-    public static int getVal(String str) {
+    private static int getVal(String str) {
         int val = 0;
         try {
             val = Integer.parseInt(str);
@@ -112,4 +128,22 @@ public class Test {
             val = -1;
         }
     }
+
+
+    static class Runner1 implements Runnable { // 实现了Runnable接口，jdk就知道这个类是一个线程
+        public void run() {
+            for (int i = 0; i < 1; i++) {
+                System.out.println("进入Runner1运行状态——————————" + i);
+            }
+        }
+    }
+
+    static class Runner2 implements Runnable { // 实现了Runnable接口，jdk就知道这个类是一个线程
+        public void run() {
+            for (int i = 0; i < 1; i++) {
+                System.out.println("进入Runner2运行状态==========" + i);
+            }
+        }
+    }
+
 }
