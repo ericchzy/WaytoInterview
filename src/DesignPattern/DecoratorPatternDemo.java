@@ -10,7 +10,5 @@ public class DecoratorPatternDemo {
 
         new RedBorderShapeDecorator(circle).draw();
         new RedBorderShapeDecorator(rectangle).draw();
-
-
     }
 }
