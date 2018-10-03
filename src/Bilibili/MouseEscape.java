@@ -4,17 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * The input processing is wrong
- */
-
 public class MouseEscape {
     private static List<Integer> wayDistance = new ArrayList<>();
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int length = in.nextInt();
         int[][] map = new int[length][length];
-
+        for (int i = 0; i < length; i++) {
+            String[] strArr = in.next().split(",");
+            // length & width is equal
+            for (int j = 0; j < length; j++) {
+                map[i][j] = Integer.parseInt(strArr[j]);
+            }
+        }
 
         dfs(map, 0, 0, 0);
         wayDistance.sort((o1, o2) -> o2 - o1);
