@@ -1,4 +1,4 @@
-package com.company;
+package Algorithm;
 
 public class BinarySearch {
     public int binarySearch(int[] arr, int start, int end, int expectedNum) {
