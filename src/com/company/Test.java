@@ -3,9 +3,9 @@ package com.company;
 //import com.company.util.TestUtil;
 //import com.company.TestUtil;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import com.company.util.io;
+
+import java.util.*;
 
 public class Test {
     public static void main(String[] args)  {
@@ -162,6 +162,11 @@ public class Test {
 //		thread2.start();
         thread1.run();
         thread2.run();
+
+        System.out.println("-----");
+        Integer[] arr = new Integer[]{1,2,3,4,5};
+        Arrays.sort(arr, Collections.reverseOrder());
+        System.out.println(Arrays.toString(arr));
     }
 
     public static int test() {

@@ -1,43 +1,28 @@
 package Algorithm;
 
-public class QuickSort {
-    private static int partition(int[] arr, int left, int right) {
-        int pivotKey = arr[left];
-//        int pivotPointer = left;
-
-        while (left < right) {
-            while (left < right && arr[right] >= pivotKey) right--;
-            arr[left] = arr[right];
-            while (left < right && arr[left] <= pivotKey) left++;
-            arr[right] = arr[left];
-//            swap(arr, left, right);
-        }
-
-
-        arr[left] = pivotKey;
-//        swap(arr, pivotPointer, left);
-        return left;
-    }
-
-    public static void quickSort(int[] arr, int left, int right) {
-        if (left >= right) return;
-
-        int pivotPos = partition(arr, left, right);
-        quickSort(arr, left, pivotPos - 1);
-        quickSort(arr, pivotPos + 1, right);
-
-    }
-
+public class ShellSort {
     public static void sort(int[] arr) {
         if (arr == null || arr.length == 0) return;
 
-        quickSort(arr, 0, arr.length - 1);
+        int d = arr.length / 2;
+        while (d >= 1) {
+            shellInsert(arr, d);
+            d = d >> 1;
+        }
     }
 
-    private static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
+    private static void shellInsert(int[] arr, int d) {
+        for (int i = d; i < arr.length; i++) {
+            int j = i - d;
+            int temp = arr[i];
+
+            while (j >= 0 && arr[j] > temp) {
+                arr[j + d] = arr[j];
+                j -= d;
+            }
+
+            if (j != i - d) arr[j + d] = temp;
+        }
     }
 
     public static void main(String[] args) {
@@ -49,14 +34,14 @@ public class QuickSort {
         System.out.println();
         int N = 10000;
         int[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);
-        QuickSort.sort(arr);
+        ShellSort.sort(arr);
         SortTestHelper.printArray(arr);
 
     }
 
     private static void test1() {
         int arr[] = {5, 3, 8, 6, 4};
-        SelectSort.sort(arr);
+        ShellSort.sort(arr);
         System.out.println();
         for (int element :
                 arr) {
@@ -66,7 +51,7 @@ public class QuickSort {
 
     private static void test2() {
         int arr[] = {};
-        SelectSort.sort(arr);
+        ShellSort.sort(arr);
         System.out.println();
         for (int element : arr) {
             System.out.print(element + " ");
@@ -75,7 +60,7 @@ public class QuickSort {
 
     private static void test3() {
         int arr[] = {2, 3, 4, 5, 6};
-        SelectSort.sort(arr);
+        ShellSort.sort(arr);
         System.out.println();
         for (int element :
                 arr) {
@@ -86,11 +71,10 @@ public class QuickSort {
 
     private static void test4() {
         int arr[] = {6, 5, 4, 3, 2};
-        SelectSort.sort(arr);
+        ShellSort.sort(arr);
         System.out.println();
         for (int element : arr) {
             System.out.print(element + " ");
         }
     }
-
 }
