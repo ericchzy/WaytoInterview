@@ -26,7 +26,10 @@
 
 ## Algorithm
 
-剑指Offer上的算法题目的Java实现
+- 剑指Offer上的算法题目的Java实现
+- 常用排序算法
+
+![](https://ws1.sinaimg.cn/mw690/0061W3qMgy1fw3hgw1m41j30hi0a57cm.jpg)
 
 ## Leetcode
 
