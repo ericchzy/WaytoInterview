@@ -1,5 +1,7 @@
 package Algorithm;
 
+import java.util.Arrays;
+
 public class BubbleSort {
     public static void sort(int[] arr) {
         if (arr == null || arr.length == 0) return;
@@ -32,30 +34,21 @@ public class BubbleSort {
     private static void test1() {
         int arr[] = {5, 3, 8, 6, 4};
         BubbleSort.sort(arr);
-        for (int element :
-                arr) {
-            System.out.print(element + " ");
-        }
+        System.out.println(Arrays.toString(arr));
     }
 
     private static void test2() {
         int arr[] = {};
         BubbleSort.sort(arr);
         System.out.println();
-        for (int element :
-                arr) {
-            System.out.print(element + " ");
-        }
+        System.out.println(Arrays.toString(arr));
     }
 
     private static void test3() {
         int arr[] = {2, 3, 4, 5, 6};
         BubbleSort.sort(arr);
         System.out.println();
-        for (int element :
-                arr) {
-            System.out.print(element + " ");
-        }
+        System.out.println(Arrays.toString(arr));
     }
 
 
@@ -63,10 +56,7 @@ public class BubbleSort {
         int arr[] = {6, 5, 4, 3, 2};
         BubbleSort.sort(arr);
         System.out.println();
-        for (int element :
-                arr) {
-            System.out.print(element + " ");
-        }
+        System.out.println(Arrays.toString(arr));
     }
 }
 

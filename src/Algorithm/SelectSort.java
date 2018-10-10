@@ -1,5 +1,7 @@
 package Algorithm;
 
+import java.util.Arrays;
+
 public class SelectSort {
     public static void sort(int[] arr) {
         if (arr == null || arr.length == 0) return;
@@ -40,27 +42,21 @@ public class SelectSort {
         int arr[] = {5, 3, 8, 6, 4};
         SelectSort.sort(arr);
         System.out.println();
-        for (int element : arr) {
-            System.out.print(element + " ");
-        }
+        System.out.println(Arrays.toString(arr));
     }
 
     private static void test2() {
         int arr[] = {};
         SelectSort.sort(arr);
         System.out.println();
-        for (int element : arr) {
-            System.out.print(element + " ");
-        }
+        System.out.println(Arrays.toString(arr));
     }
 
     private static void test3() {
         int arr[] = {2, 3, 4, 5, 6};
         SelectSort.sort(arr);
         System.out.println();
-        for (int element : arr) {
-            System.out.print(element + " ");
-        }
+        System.out.println(Arrays.toString(arr));
     }
 
 
@@ -68,8 +64,6 @@ public class SelectSort {
         int arr[] = {6, 5, 4, 3, 2};
         SelectSort.sort(arr);
         System.out.println();
-        for (int element : arr) {
-            System.out.print(element + " ");
-        }
+        System.out.println(Arrays.toString(arr));
     }
 }

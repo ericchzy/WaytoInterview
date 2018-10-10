@@ -21,6 +21,7 @@ public class ShellSort {
                 j -= d;
             }
 
+            //上面初始化为 j = i - d ,若这里不等号成立即说明数组有变动
             if (j != i - d) arr[j + d] = temp;
         }
     }
