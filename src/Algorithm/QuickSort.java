@@ -58,8 +58,7 @@ public class QuickSort {
         int arr[] = {5, 3, 8, 6, 4};
         SelectSort.sort(arr);
         System.out.println();
-        for (int element :
-                arr) {
+        for (int element : arr) {
             System.out.print(element + " ");
         }
     }
@@ -77,8 +76,7 @@ public class QuickSort {
         int arr[] = {2, 3, 4, 5, 6};
         SelectSort.sort(arr);
         System.out.println();
-        for (int element :
-                arr) {
+        for (int element : arr) {
             System.out.print(element + " ");
         }
     }
