@@ -6,7 +6,7 @@
 
 简单的Java虚拟机探索之旅以及内存溢出问题探究
 
-![Java虚拟机运行时数据区](https://ws1.sinaimg.cn/large/0061W3qMgy1fwba6z0f81j30py0hfabv.jpg)
+![Java虚拟机运行时数据区](https://ws1.sinaimg.cn/mw690/0061W3qMgy1fwba6z0f81j30py0hfabv.jpg)
 
 - 堆内存溢出（不断新建静态对象而不释放其唯一引用）
 - 线程栈溢出（不断新建线程调用死循环方法）
