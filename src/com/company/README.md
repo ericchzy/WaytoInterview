@@ -1,5 +1,5 @@
 # Android选择题
-从牛客网的答案解析中收集
+从牛客网的答案解析中收集, 侵删
 
 - 安卓的六大布局管理器是LinearLayout、FrameLayout、TableLayout、RelativeLayout、AbsoluteLayout、GridLayout
 
@@ -98,7 +98,7 @@ RotateAnimation
 ## 小迈科技问答题
 
 - Intent的主要概念和用处，显式Intent和隐式Intent区别
-- 线程控制函数 wait, notify, notifyall, join, yield, sleep, synchronized的作用
+- 线程控制函数 wait, notify, notifyAll, join, yield, sleep, synchronized的作用
 - ANR以及引起的原因
 - View绘制过程onMeasure, onLayout, onDraw三个方法的作用
 - Android的动画有哪些，分别有什么区别

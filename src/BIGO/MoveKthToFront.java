@@ -1,4 +1,4 @@
-package com.company.BIGO;
+package BIGO;
 
 import com.company.util.ListNode;
 
