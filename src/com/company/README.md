@@ -1,6 +1,8 @@
 # Android选择题
 从牛客网的答案解析中收集, 侵删
 
+- 安卓四大组件: Activity、Service、BroadcastReceiver、ContentProvider
+
 - 安卓的六大布局管理器是LinearLayout、FrameLayout、TableLayout、RelativeLayout、AbsoluteLayout、GridLayout
 
 - Intent主要用于同一个app中不同组件之间传递信息。不同app之间主要使用AIDL进行通信
